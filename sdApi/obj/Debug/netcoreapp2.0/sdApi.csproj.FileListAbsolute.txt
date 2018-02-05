@@ -1,0 +1,10 @@
+/home/belshoff/IFCE/S6/SD/sdApi/obj/Debug/netcoreapp2.0/sdApi.csproj.CoreCompileInputs.cache
+/home/belshoff/IFCE/S6/SD/sdApi/obj/Debug/netcoreapp2.0/sdApi.AssemblyInfoInputs.cache
+/home/belshoff/IFCE/S6/SD/sdApi/obj/Debug/netcoreapp2.0/sdApi.AssemblyInfo.cs
+/home/belshoff/IFCE/S6/SD/sdApi/bin/Debug/netcoreapp2.0/sdApi.deps.json
+/home/belshoff/IFCE/S6/SD/sdApi/bin/Debug/netcoreapp2.0/sdApi.runtimeconfig.json
+/home/belshoff/IFCE/S6/SD/sdApi/bin/Debug/netcoreapp2.0/sdApi.runtimeconfig.dev.json
+/home/belshoff/IFCE/S6/SD/sdApi/bin/Debug/netcoreapp2.0/sdApi.dll
+/home/belshoff/IFCE/S6/SD/sdApi/bin/Debug/netcoreapp2.0/sdApi.pdb
+/home/belshoff/IFCE/S6/SD/sdApi/obj/Debug/netcoreapp2.0/sdApi.dll
+/home/belshoff/IFCE/S6/SD/sdApi/obj/Debug/netcoreapp2.0/sdApi.pdb
