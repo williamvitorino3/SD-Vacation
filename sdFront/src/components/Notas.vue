@@ -1,23 +1,32 @@
 <template>
-  <div class="container-fluid">
-    <div class="row ">
-      <h1 class="text-center">Notas</h1>
+  <app>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="offset-md-2 offset-lg-2 col-md-8 col-lg-8">
+          <input type="number" class="form-control" v-model="n1" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-md-2 offset-lg-2 col-md-8 col-lg-8">
+          <input class="form-control" v-model="n2" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-md-2 offset-lg-2 col-md-8 col-lg-8">
+          <button class="btn" @click="post">Calcular</button>
+        </div>
+      </div>
+      <p v-if="situacao.length">{{situacao}}</p>
     </div>
-      <div class="form-group">
-        <input type="number" class="form-control" v-model="n1" />
-      </div>
-      <div class="form-group">
-        <input class="form-control" v-model="n2" />
-      </div>
-      <div class="form-group">
-        <button class="btn" @click="post">Calcular</button>
-      </div>
-    <p v-if="situacao.length">{{situacao}}</p>
-  </div>
+  </app>
 </template>
 
 <script>
+import appMenu from './Menu.vue';
 export default {
+  components: {
+    app: appMenu,
+  },
   data () {
     return {
       n1: 0,

@@ -4,6 +4,7 @@ import Home from '../components/Home'
 import Notas from '../components/Notas'
 import Fumante from '../components/Fumante'
 import Numeros from '../components/Numeros'
+import Moedas from '../components/Moedas'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/numeros',
       name: 'Numeros',
       component: Numeros
+    },
+    {
+      path: '/moedas',
+      name: 'Moedas',
+      component: Moedas
     }
   ]
 })

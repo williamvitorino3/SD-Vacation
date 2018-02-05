@@ -1,9 +1,22 @@
 <template>
   <div class="container-fluid">
+    <nav class="nav justify-content-center">
+      <a class="nav-link"></a>
+      <a>
+        <router-link class="nav-link" to="notas">1°</router-link>
+      </a>
+      <a>
+        <router-link class="nav-link" to="fumante">2°</router-link>
+      </a>
+      <a>
+        <router-link class="nav-link" to="numeros">3°</router-link>
+      </a>
+      <a>
+        <router-link class="nav-link" to="moedas">4°</router-link>
+      </a>
+    </nav>
     <div class="row">
-      <router-link class="rota" to="notas">1°</router-link>
-      <router-link class="rota" to="fumante">2°</router-link>
-      <router-link class="rota" to="numeros">3°</router-link>
+      <slot></slot>
     </div>
   </div>
 </template>
@@ -14,7 +27,4 @@ export default {
 </script>
 
 <style scoped>
-.rota {
-  margin-right: 0.5vw;
-}
 </style>
