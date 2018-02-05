@@ -12541,11 +12541,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/belshoff/IFCE/S6/SD/sdApi/sdApi.csproj",
+      "projectUniqueName": "/home/belshoff/IFCE/SD/SD-Vacation/sdApi/sdApi.csproj",
       "projectName": "sdApi",
-      "projectPath": "/home/belshoff/IFCE/S6/SD/sdApi/sdApi.csproj",
+      "projectPath": "/home/belshoff/IFCE/SD/SD-Vacation/sdApi/sdApi.csproj",
       "packagesPath": "/home/belshoff/.nuget/packages/",
-      "outputPath": "/home/belshoff/IFCE/S6/SD/sdApi/obj/",
+      "outputPath": "/home/belshoff/IFCE/SD/SD-Vacation/sdApi/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

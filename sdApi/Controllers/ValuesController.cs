@@ -46,17 +46,17 @@ namespace sdApi.Controllers
         {
             if(dados[0] < dados[1])
             {
-                int media = 0;
-                for(int i = dados[0]; i <= dados[1]; i+=1)
-                    media += i;
-                return "Crescente";
-                // Converter a media pra string e retornar.
+                int qtd = 0, sum = 0;
+                for(int i = dados[0]; i <= dados[1]; i+=1, qtd +=1)
+                    sum += i;
+                return Convert.ToString(sum/qtd);
             }
             if(dados[0] > dados[1])
             {
-                int media = 0;
+                int qtd = 0;
                 for(int i = dados[0]; i <= dados[1] && i%2 == 0; i+=1)
-                    media += i;
+                    qtd += i;
+                return Convert.ToString(qtd);// "Decrescente";
                 // Converter a media pra string e retornar.
             }
             return "Iguais";
