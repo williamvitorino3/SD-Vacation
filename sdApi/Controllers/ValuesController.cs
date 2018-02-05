@@ -54,8 +54,9 @@ namespace sdApi.Controllers
             if(dados[0] > dados[1])
             {
                 int qtd = 0;
-                for(int i = dados[0]; i <= dados[1] && i%2 == 0; i+=1)
-                    qtd += i;
+                for(int i = dados[0]; i >= dados[1]; i-=1)
+                    if(i%2 == 0)
+                        qtd += 1;
                 return Convert.ToString(qtd);// "Decrescente";
                 // Converter a media pra string e retornar.
             }
@@ -68,30 +69,32 @@ namespace sdApi.Controllers
     public class Moedas: Controller
     {
         [HttpPost]
-        public double[] post([FromBody]double dinheiro)
+        public int[] post([FromBody]double dinheiro)
         {
-            double m50 = 0, m25 = 0, m10 = 0;
-            
-            m50 = dinheiro/0.5;
-            m25 = (dinheiro%0.5)/0.25;
-            m10 = ((dinheiro%0.5)%0.25)/0.1;
+            int m50 = 0, m25 = 0, m10 = 0;
+            dinheiro *= 100;
+            m50 = (int)dinheiro/50;
+            dinheiro%=50;
+            m25 = (int)dinheiro/25;
+            dinheiro%=25;
+            m10 = (int)dinheiro/10;
 
-            return new double[3]{m50, m25, m10}; // Acho que isso não funciona.
+            return new int[3]{m50, m25, m10}; // Acho que isso não funciona.
         }
     }
 
     // Q5
-    // [Route("api/[controller]")]
-    // public class Gasolina: Controller
-    // {
-    //     private class Response
-    //     {
-    //         private float velocidade = {get; set;};
-    //         private float tempo = {get; set;};
-    //         private float distancia = {get; set;};
-    //         private float litros = {get; set;};
-    //     }
-    //     // [HttpPost]
-    //     // Definir um objeto pro retorno.
-    // }
+    [Route("api/[controller]")]
+    public class Gasolina: Controller
+    {
+        private class Response
+        {
+            private float velocidade = {get; set;};
+            private float tempo = {get; set;};
+            private float distancia = {get; set;};
+            private float litros = {get; set;};
+        }
+        // [HttpPost]
+        // Definir um objeto pro retorno.
+    }
 }
