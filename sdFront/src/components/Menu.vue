@@ -14,6 +14,9 @@
       <a>
         <router-link class="nav-link" to="moedas">4°</router-link>
       </a>
+      <a>
+        <router-link class="nav-link" to="litros">5°</router-link>
+      </a>
     </nav>
     <div class="row">
       <slot></slot>

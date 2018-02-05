@@ -5,6 +5,7 @@ import Notas from '../components/Notas'
 import Fumante from '../components/Fumante'
 import Numeros from '../components/Numeros'
 import Moedas from '../components/Moedas'
+import Litros from '../components/Litros'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/moedas',
       name: 'Moedas',
       component: Moedas
+    },
+    {
+      path: '/litros',
+      name: 'Litros',
+      component: Litros
     }
   ]
 })

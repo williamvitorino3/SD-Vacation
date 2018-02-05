@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using sdApi.Models;
 
 namespace sdApi.Controllers
 {
@@ -87,14 +88,11 @@ namespace sdApi.Controllers
     [Route("api/[controller]")]
     public class Gasolina: Controller
     {
-        private class Response
+        [HttpPost]
+        public DadosViagem post()
         {
-            private float velocidade = {get; set;};
-            private float tempo = {get; set;};
-            private float distancia = {get; set;};
-            private float litros = {get; set;};
+            
         }
-        // [HttpPost]
         // Definir um objeto pro retorno.
     }
 }
