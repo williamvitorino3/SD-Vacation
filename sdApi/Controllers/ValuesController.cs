@@ -26,8 +26,14 @@ namespace sdApi.Controllers
         [HttpPost]
         public float post([FromBody]float[] dados)
         {
-            float gasto = (dados[0] * (dados[2]/dados[1]) * 365);
-            return gasto;
+            return (
+                dados[0] *
+                    (dados[2]/
+                        (
+                            dados[1] == 0 ? 1 : dados[1]
+                        )
+                    )
+                * 365);
         }
     }
 
